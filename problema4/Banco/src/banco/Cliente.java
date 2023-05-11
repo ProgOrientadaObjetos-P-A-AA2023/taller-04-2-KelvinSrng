@@ -6,48 +6,34 @@ public class Cliente {
     private String nombres;
     private String apellidos;
     private String cedula;
-
-    /**
-     * @return the nombres
-     */
-    public String getNombres() {
+    
+    public Cliente (String noms, String apll, String ced) {
+        nombres = noms;
+        apellidos = apll;
+        cedula = ced;
+    }
+    
+    public void establecerNombres(String x) {
+        nombres = x;
+    }
+    
+    public void establecerApellidos(String x) {
+        apellidos = x;
+    }
+    
+    public void establecerCedula(String x) {
+        cedula = x;
+    }
+    
+    public String obtenerNombres() {
         return nombres;
     }
-
-    /**
-     * @return the apellidos
-     */
-    public String getApellidos() {
+    
+    public String obtenerApellidos() {
         return apellidos;
     }
-
-    /**
-     * @return the cedula
-     */
-    public String getCedula() {
+    
+    public String obtenerCedula() {
         return cedula;
     }
-
-    /**
-     * @param nombres the nombres to set
-     */
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
-    }
-
-    /**
-     * @param apellidos the apellidos to set
-     */
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
-    }
-
-    /**
-     * @param cedula the cedula to set
-     */
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
-    }
-    
-    
 }
